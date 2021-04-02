@@ -1,0 +1,201 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: #E20000;
+}
+p{
+    color: #6A6A6A;
+    font-size: 14px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 14px; 
+    color:#282828;
+    font-weight: 300;
+}
+
+#sobre-mi{
+    background-image: url(../images/fondo-proyectos.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#sobre-mi .card{
+    height: 182px;
+}
+#idiomas .card-idioma{
+    border-radius: 15px;
+}
+#idiomas .card{
+    background-color: #370A6D;
+    border-radius: 15px;
+    padding: 40px 0;
+}
+#idiomas{
+    background-color: #eee;
+}
+#idiomas h2{
+    font-size: 16px;
+    font-weight: 600px;
+}
+#idiomas ul{
+    padding: 0px;
+    font-size: 14px;
+    color: #282828;
+    list-style-type: none;
+}
+#idiomas .fas{
+    font-size: 80px;
+    color: white;
+}
+
+#proyectos{
+    background-image: url(../images/fondo-proyectos.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#proyectos .card p{
+    height: 90px
+}
+#contacto, #inicio{
+    background-image: url(../images/fondo-contacto.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+input, textarea{
+    border-radius: 15px !important;
+    border: 0px !important;
+}
+textarea{
+    height: 150px !important;
+    resize: none;
+}
+nav .nav-link{
+    color: #282828;
+}
+nav .active{
+    border: 1px solid #E20000;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: 100;
+}
+nav .navbar-toggler-icon i{
+    color: #E20000;
+}
+
+#contacto main {
+    height: 77vh;
+}
+footer, footer a{
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+}
+footer .fa-whatsapp{
+    color: white;
+    background-color: #370A6D;
+    font-size: 30px;
+    padding: 10px 19px;
+    border-radius: 10px 10px 0 0;
+    height: 65px;
+    width: 65px;
+}
+footer .fa-github{
+    font-size: 30px;
+    color: white;
+}
+footer .fa-linkedin-in{
+    color: #ff4a49;
+    background-color: white;
+    font-size: 20px;
+    border: 0px;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    border-radius: 80px;
+    margin: 0 8px;
+}
+#inicio .input-home p{
+    color:white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+#proyectos footer, #proyectos footer a{
+    color: #E20000;
+}
+#proyectos footer .fa-github{
+    font-size: 30px;
+    color: #E20000;
+}
+#proyectos footer .fa-linkedin-in{
+    color: white;
+    background-color: #E20000;
+}
+#proyectos h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+#proyectos p{
+    font-size: 14px;
+}
+#proyectos img{
+    height: 177px;
+}
+
+.color-gradiente{
+    background: linear-gradient(to right, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+}
+
+.btn{
+    background-color: #FFFFFF;
+    color: #370A6D;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 5px 35px;
+}
+.btn:hover{
+    color: #FFFFFF;
+    background-color: #370A6D;
+}
+.btn-rojo{
+    background-color: #E20000;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: 100;
+}
+.link-rojo{
+    color: #E20000;
+    font-size: 15px;
+}
+.btn-pdf:hover{
+    text-decoration: underline;
+}
+.img-circle {
+    margin: 1em auto;
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+#inicio .div-cohete{
+    height: 410px;
+}#inicio .cohete{
+    height: 400px;
+}
+#inicio .cohete:hover{
+    height: 410px;
+}
