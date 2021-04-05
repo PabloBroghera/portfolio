@@ -11,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/estilos.css?v=1">
-    <script src="css/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
 
 </head>
 
