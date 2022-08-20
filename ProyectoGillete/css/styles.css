@@ -1,0 +1,439 @@
+body {
+    margin: 0;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    max-width: 435px;
+}
+
+#background {
+    background-image: url(../Assets/fondo.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+/* Inicio Instrucciones */
+#inicio{
+    display : none;
+}
+#final{
+    display: none;
+}
+#logo {
+    background-image: url(../Assets/1_Instrucciones/logo.png);
+    height: 160px;
+    width: 216px;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+#intrucciones {
+    background-image: url(../Assets/1_Instrucciones/intrucciones.png);
+    height: 17px;
+    width: 138px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+#paso1{
+    background-image: url(../Assets/1_Instrucciones/paso1.png);
+    height: 44px;
+    width: 174px;
+    position: absolute;
+    top: 42%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#paso2{
+    background-image: url(../Assets/1_Instrucciones/paso2.png);
+    height: 15px;
+    width: 284px;
+    position: absolute;
+    top: 52%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#paso3{
+    background-image: url(../Assets/1_Instrucciones/paso3.png);
+    height: 46px;
+    width: 200px;
+    position: absolute;
+    top: 57%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#persona{
+    background-image: url(../Assets/1_Instrucciones/persona.png);
+    height: 233px;
+    width: 203px;
+    position: absolute;
+    top: 65%;
+    left: 0px;
+    right: 173px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* Zona Gameplay */
+#juego{
+    display: none;
+}
+#logo2{
+    background-image: url(../Assets/1_Instrucciones/logo.png);
+    height: 131px;
+    width: 172px;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+#juan{
+    background-image: url(../Assets/2_Gameplay/hombre.png);
+    height: 390px;
+    width: 361px;
+    position: absolute;
+    top: 29%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+/*
+-------
+Sub zona de la espuma
+
+*/
+
+#parteA {
+    background-image: url(../Assets/2_Gameplay/espumaA.png);
+    height: 83px;
+    width: 37px;
+    position: absolute;
+    right: 205px;
+    top: 34%;
+    background-size: cover;
+    opacity: 0;
+}
+#parteB {
+    background-image: url(../Assets/2_Gameplay/espumaB.png);
+    height: 90px;
+    width: 56px;
+    position: absolute;
+    right: 164px;
+    top: 33%;
+    background-size: cover;
+    opacity: 0;
+}
+#parteC {
+    background-image: url(../Assets/2_Gameplay/espumaC.png);
+    height: 90px;
+    width: 53px;
+    position: absolute;
+    right: 124px;
+    top: 34%;
+    background-size: cover;
+    opacity: 0;
+}
+#parteD {
+    background-image: url(../Assets/2_Gameplay/espumaD.png);
+    height: 80px;
+    width: 34px;
+    position: absolute;
+    right: 103px;
+    top: 34%;
+    background-size: cover;
+    opacity: 0;
+}
+#barba_1{
+    background-image: url(../Assets/2_Gameplay/barba.png);
+    height: 138px;
+    width: 41px;
+    position: absolute;
+    right: 206px;
+    top: 17%;
+    background-size: cover;
+    opacity: 1;
+}
+#barba_2{
+    background-image: url(../Assets/2_Gameplay/barba_2.png);
+    height: 129px;
+    width: 37px;
+    position: absolute;
+    right: 169px;
+    top: 22%;
+    background-size: cover;
+    opacity: 1;
+}
+#barba_3{
+    background-image: url(../Assets/2_Gameplay/barba_3.png);
+    height: 143px;
+    width: 36px;
+    position: absolute;
+    right: 133px;
+    top: 18%;
+    background-size: cover;
+    opacity: 1;
+}
+#barba_4{
+    background-image: url(../Assets/2_Gameplay/barba_4.png);
+    height: 194px;
+    width: 38px;
+    position: absolute;
+    right: 95px;
+    top: 2%;
+    background-size: cover;
+    opacity: 1;
+}
+/*----Items Jugables----*/
+
+#cuadrado1{
+    background-image: url(../Assets/2_Gameplay/cuadrado.png);
+    height: 64px;
+    width: 76px;
+    position: absolute;
+    left: 27px;
+    top: 77%;
+    background-size: cover;
+}
+#espuma{
+    background-image: url(../Assets/2_Gameplay/espuma.png);
+    height: 98px;
+    width: 25px;
+    position: absolute;
+    left: 51px;
+    top: 71%;
+    background-size: cover;
+}
+#espuma_2{
+    background-image: url(../Assets/2_Gameplay/espuma_2.png);
+    height: 98px;
+    width: 61px;
+    position: absolute;
+    left: 34px;
+    top: 71%;
+    background-size: cover;
+    display: none;
+}
+#texto1{
+    background-image: url(../Assets/2_Gameplay/prepara.png);
+    height: 16px;
+    width: 70px;
+    position: absolute;
+    left: 30px;
+    top: 88%;
+    background-size: cover;
+}
+#cuadrado2{
+    background-image: url(../Assets/2_Gameplay/cuadrado.png);
+    height: 64px;
+    width: 76px;
+    position: absolute;
+    top: 77%;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#rasura{
+    background-image: url(../Assets/2_Gameplay/rastrillo.png);
+    height: 98px;
+    width: 25px;
+    position: absolute;
+    top: 71%;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#rasura_2{
+    background-image: url(../Assets/2_Gameplay/rastrillo_2.png);
+    height: 98px;
+    width: 77px;
+    position: absolute;
+    top: 71%;
+    background-size: cover;
+    display: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#texto2{
+    background-image: url(../Assets/2_Gameplay/rasuraTexto.png);
+    height: 16px;
+    width: 70px;
+    position: absolute;
+    top: 88%;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#cuadrado3{   
+    background-image: url(../Assets/2_Gameplay/cuadrado.png);
+    height: 64px;
+    width: 76px;
+    position: absolute;
+    right: 26px;
+    top: 77%;
+    background-size: cover;
+}
+#hidrata{
+    background-image: url(../Assets/2_Gameplay/locion.png);
+    height: 98px;
+    width: 61px;
+    position: absolute;
+    right: 36px;
+    top: 71%;
+    background-size: cover;
+}
+#hidrata_2{
+    background-image: url(../Assets/2_Gameplay/locion_2.png);
+    height: 98px;
+    width: 89px;
+    position: absolute;
+    right: 50px;
+    top: 71%;
+    background-size: cover;
+    display: none; 
+}
+#texto3{
+    background-image: url(../Assets/2_Gameplay/hidrataTexto.png);
+    height: 16px;
+    width: 70px;
+    position: absolute;
+    right: 31px;
+    top: 88%;
+    background-size: cover;
+}
+#bg-azul{
+    background-image: url(../Assets/2_Gameplay/fondoazul.png);
+    height: 127px;
+    width: 382px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 81%;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#estrella1{
+    background-image: url(../Assets/2_Gameplay/estrella_1.png);
+    height: 71px;
+    width: 67px;
+    position: absolute;
+    left: 27px;
+    top: 28%;
+    background-size: cover;
+    opacity: 0;
+}
+#estrella2{
+    background-image: url(../Assets/2_Gameplay/estrella_2.png);
+    height: 71px;
+    width: 67px;
+    position: absolute;
+    top: 26%;
+    background-size: cover;
+    opacity: 0;
+    right: 20px;
+}
+#estrella3{
+    background-image: url(../Assets/2_Gameplay/estrella_3.png);
+    height: 71px;
+    width: 67px;
+    position: absolute;
+    left: 27px;
+    top: 50%;
+    background-size: cover;
+    opacity: 0;
+}
+#estrella4{
+    background-image: url(../Assets/2_Gameplay/estrella_4.png);
+    height: 71px;
+    width: 67px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-size: cover;
+    opacity: 0;
+}
+/*----Parte Final ----*/
+
+
+#logoFinal{
+    background-image: url(../Assets/1_Instrucciones/logo.png);
+    height: 160px;
+    width: 216px;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+#registrate{
+    background-image: url(../Assets/3_Final/registrateParaParticipar.png);
+    height: 66px;
+    width: 220px;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+#btnRegistrate{
+    margin: 0 auto;
+    top: 60%;
+    left: 0;
+    right: 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: absolute;
+    height: 31px;
+    width: 212px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+#registrateTexto{
+    background-image: url(../Assets/3_Final/boton.png);
+    height: 21px;
+    width: 128px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#terminos{
+    background-image: url(../Assets/3_Final/terminos.png);
+    top: 77%;
+    height: 50px;
+    width: 238px;
+    background-size: cover;
+    position: absolute;
+    margin: 0 auto;
+    left: 45px;
+}

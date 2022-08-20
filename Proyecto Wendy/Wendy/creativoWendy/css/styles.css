@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+}
+
+#loader-container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    position: absolute;
+    width: 100vw;
+    max-width: 400px;
+    max-height: 800px;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#background {
+    background-image: url(../Assets/fondo.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    /* background-color:blueviolet; */
+}
+
+#logoInicial {
+    background-image: url(../Assets/logo.png);
+    height: 116px;
+    width: 100px;
+    background-size: cover;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#playZone {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    top: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#encuentra {
+    background-image: url(../Assets/encuentra.png);
+    height: 58px;
+    width: 240px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.simbolo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+
+.soda {
+    background-image: url(../Assets/vaso.png);
+}
+
+.hamburguesa {
+    background-image: url(../Assets/hamburguesa.png);
+}
+
+.helado {
+    background-image: url(../Assets/helado.png);
+
+}
+
+.papas {
+    background-image: url(../Assets/papasFritas.png);
+}
+
+.aros {
+    background-image: url(../Assets/arosDeCebolla.png);
+}
+
+#simbolo1 {
+    top: 0;
+    left: 0;
+}
+
+#simbolo2 {
+    top: 0;
+    left: 85px;
+}
+
+#simbolo3 {
+    top: 0;
+    left: 175px;
+}
+
+#simbolo4 {
+    top: 0;
+    left: 270px;
+}
+
+#simbolo5 {
+    top: 85px;
+    left: 0;
+}
+
+#simbolo6 {
+    top: 85px;
+    left: 85px;
+}
+
+#simbolo7 {
+    top: 85px;
+    left: 175px;
+}
+
+#simbolo8 {
+    top: 85px;
+    left: 270px;
+}
+
+#simbolo9 {
+    top: 175px;
+    left: 3px;
+}
+
+#simbolo10 {
+    top: 175px;
+    left: 85px;
+}
+
+#simbolo11 {
+    top: 175px;
+    left: 175px;
+}
+
+#simbolo12 {
+    top: 175px;
+    left: 270px;
+}
+
+#simbolo13 {
+    top: 270px;
+    left: 0;
+}
+
+#simbolo14 {
+    top: 270px;
+    left: 85px;
+}
+
+#simbolo15 {
+    top: 270px;
+    left: 175px;
+}
+
+#simbolo16 {
+    top: 270px;
+    left: 270px;
+}
+
+#progreso {
+    background-image: url(../Assets/tuProgresoBlanco.png);
+    height: 27px;
+    width: 149px;
+    background-size: cover;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#barraProgresoContainer {
+    background-image: url(../Assets/barraVacia.png);
+    height: 36px;
+    width: 284px;
+    background-size: contain;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.barraProgreso {
+    height: 11.7px;
+    background-size: cover;
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#barraProgreso1 {
+    background-image: url(../Assets/barraProgreso1.png);
+    width: 64px;
+}
+
+#barraProgreso2 {
+    background-image: url(../Assets/barraProgreso2.png);
+    width: 115px;
+}
+
+#barraProgreso3 {
+    background-image: url(../Assets/barraProgreso3.png);
+    width: 170px;
+}
+
+#progresoContainer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 70px;
+}
+
+#barraProgreso4 {
+    background-image: url(../Assets/barraProgreso4.png);
+    width: 264px;
+}
+
+#matchLine {
+    background-image: url(../Assets/linea.png);
+    max-width: 240px;
+    height: 100%;
+    max-height: 10px;
+    background-size: cover;
+    position: fixed;
+}
+
+
+
+#ctaFinal {
+    display: none;
+    background-image: url(../Assets/ctaEF.png );
+    width: 270px;
+    height: 183px;
+    background-size: contain;
+    position: absolute;
+    top: 390px;
+}
