@@ -1,0 +1,615 @@
+body{
+    margin:0;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#inicio {
+    display: none;
+}
+#juego {
+    display: none;
+}
+#background {
+    background-image: url(../Assets/background.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+#loader-container {
+    position: absolute;
+    display:flex;
+    margin: 0 auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    align-content: center;
+    justify-content: center;
+}
+#loader {
+    margin: auto;
+}
+.universal {
+    background-image: url(../Assets/logo_universarl.png);
+    height: 55px;
+    width: 100px;
+    position: absolute;
+    top:10%;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+.logoInicio {
+    top: 150px;
+}
+.logoJuego {
+    top: 14%;
+}
+.uneLosSignos {
+    background-image: url(../Assets/textoSignos.png);
+    height: 45px;
+    width: 240px;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    margin: 0 auto;
+}
+#jugar {
+    background-image: url(../Assets/jugar.png);
+    height: 15px;
+    width: 75px;
+    background-size: cover;
+    margin: 0 auto;
+}
+#btnJugar {
+    margin: 0 auto;
+    top: 350px;
+    left: 0;
+    right: 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute;
+    height: 55px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+#danBrowns {
+    background-image: url(../Assets/logodelJuego.png);
+    height: 30px;
+    width: 200px;
+    background-size: cover;
+    position: absolute;
+    top: 450px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#uneLosSignos {
+    background-image: url(../Assets/textoSignos.png);
+    height: 30px;
+    width: 155px;
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#completar {
+    background-color: rgba(111, 119, 93, 0.3);
+    height: 30px;
+    width: 225px;
+    background-size: cover;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#E{
+    background-image: url(../Assets/e.png);
+    height: 16px;
+    width: 13px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    opacity: 0;
+    background-size: cover;
+}
+#S{
+    background-image: url(../Assets/s.png);
+    height: 18px;
+    width: 12px;
+    position: absolute;
+    left: 45px;
+    top: 7px;
+    opacity: 0;
+    background-size: cover;
+}
+#C{
+    background-image: url(../Assets/c.png);
+    height: 18px;
+    width: 15px;
+    position: absolute;
+    left: 72px;
+    top: 7px;
+    opacity: 0;
+    background-size: cover;
+}
+#O{
+    background-image: url(../Assets/o.png);
+    height: 18px;
+    width: 15px;
+    position: absolute;
+    left: 105px;
+    top: 7px;
+    opacity: 0;
+    background-size: cover;
+}
+#N{
+    background-image: url(../Assets/n.png);
+    height: 18px;
+    width: 15px;
+    position: absolute;
+    left: 135px;
+    top: 7px;
+    opacity: 0;
+    background-size: cover;
+}
+#D{
+    background-image: url(../Assets/d.png);
+    height: 18px;
+    width: 15px;
+    position: absolute;
+    left: 165px;
+    top: 7px;
+    opacity: 0;
+    background-size: cover;
+}
+
+#E2{
+    background-image: url(../Assets/e.png);
+    height: 16px;
+    width: 13px;
+    position: absolute;
+    left: 195px;
+    top: 7px;
+    opacity: 0;
+    background-size: cover;
+}
+#cuadradoC{
+    background-image: url(../Assets/cuadrado.png);
+    height: 17.5px;
+    width: 18px;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 180px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+#trianguloC{
+    background-image: url(../Assets/V.png);
+    height: 17px;
+    width: 24px;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 125px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+#dosLadosC{
+    background-image: url(../Assets/doslados.png);
+    height: 17px;
+    width: 16px;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 55px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+#tresLadosPuntoC{
+    background-image: url(../Assets/tresladospunto.png);
+    height:17px;
+    width: 17px;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 63px;
+    right: 60px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+#cuadradoPuntoC{
+    background-image: url(../Assets/cuadradopunto.png);
+    height: 17.5px;
+    width: 18px;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 66px;
+    right: 0px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+#tresLadosC{
+    background-image: url(../Assets/treslados.png);
+    height: 17.5px;
+    width: 18px;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 130px;
+    right: 0px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+#cuadradoC2{
+    background-image: url(../Assets/cuadrado.png);
+    height: 17.5px;
+    width: 18px;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 185px;
+    right: 0px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+#playZone{
+    width: 250px;
+    height: 265px;
+    top: 41%;
+    position: absolute;
+    margin: 0 auto;
+    left:0px;
+    right: 0px;
+    
+
+}
+
+#simbolo1{
+    background-image: url(../Assets/cuadrado.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 135px;
+    margin: 0 auto;
+}
+
+#simbolo2{
+    background-image: url(../Assets/doslados.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+  left: 0px;
+  right: 40px;
+  margin: 0 auto;
+}
+
+#simbolo3{
+    background-image: url(../Assets/doslados.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+  left: 0px;
+  right: -55px;
+  margin: 0 auto;
+}
+
+#simbolo4{
+    background-image: url(../Assets/doslados.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+  left: 0px;
+  right: -145px;
+  margin: 0 auto;
+}
+
+#simbolo5{
+    background-image: url(../Assets/cuadrado.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 65px;
+  left: 0px;
+  right: 135px;
+  margin: 0 auto;
+}
+
+#simbolo6{
+    background-image: url(../Assets/treslados.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 65px;
+  left: 0px;
+  right: 40px;
+  margin: 0 auto;
+}
+
+#simbolo7{
+    background-image: url(../Assets/V.png);
+    height: 25px;
+    width: 40px;
+    background-size: cover;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    right: -55px;
+    margin: 0 auto;
+}
+
+#simbolo8{
+    background-image: url(../Assets/cuadradopunto.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 65px;
+  left: 0px;
+  right: -145px;
+  margin: 0 auto;
+}
+
+#simbolo9{
+    background-image: url(../Assets/cuadrado.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 115px;
+  left: 0px;
+  right: 135px;
+  margin: 0 auto;
+}
+
+#simbolo10{
+    background-image: url(../Assets/tresladospunto.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 115px;
+  left: 0px;
+  right: 40px;
+  margin: 0 auto;
+}
+
+#simbolo11{
+    background-image: url(../Assets/tresladospunto.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    right: -55px;
+    margin: 0 auto;
+}
+
+#simbolo12{
+    background-image: url(../Assets/cuadradopunto.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    right: -145px;
+    margin: 0 auto;
+}
+
+
+#simbolo13{
+    background-image: url(../Assets/V.png);
+    height: 25px;
+    width: 40px;
+    background-size: cover;
+    position: absolute;
+    top: 170px;
+  left: 0px;
+  right: 135px;
+  margin: 0 auto;
+}
+
+#simbolo14 {
+    background-image: url(../Assets/cuadrado.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 170px;
+  left: 0px;
+  right: 40px;
+  margin: 0 auto;
+}
+
+#simbolo15 {
+    background-image: url(../Assets/V.png);
+    height: 25px;
+    width: 40px;
+    background-size: cover;
+    position: absolute;
+    top: 170px;
+  left: 0px;
+  right: -55px;
+  margin: 0 auto;
+}
+
+#simbolo16 {
+    background-image: url(../Assets/cuadradopunto.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    right: -145px;
+    margin: 0 auto;
+}
+
+#matchLineV1{
+    background-image: url(../Assets/matchLine.png);
+    height: 150px;
+    width: 1px;
+    transform: rotate(180deg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 57px;
+    opacity: 0;
+}
+
+#matchLineV2{
+    background-image: url(../Assets/matchLine.png);
+    height: 150px;
+    width: 1px;
+    transform: rotate(180deg);
+    background-size: cover;
+    position: absolute;
+    top: 53px;
+    left: 197px;
+    opacity: 0;
+}
+#matchLineV3{
+    background-image: url(../Assets/matchLine.png);
+    height: 150px;
+    width: 1px;
+    transform: rotate(90deg);
+    background-size: cover;
+    position: absolute;
+    top: 52px;
+    left: 103px;
+    opacity: 0;
+}
+#matchLineV4{
+    background-image: url(../Assets/matchLine.png);
+    height: 150px;
+    width: 1px;
+    transform: rotate(180deg);
+    background-size: cover;
+    position: absolute;
+    top: 53px;
+    left: 151px;
+    opacity: 0;
+}
+#matchLineV5{
+    background-image: url(../Assets/matchLine.png);
+    height: 150px;
+    width: 1px;
+    transform: rotate(90deg);
+    background-size: cover;
+    position: absolute;
+    top: -50px;
+    left: 146px;
+    opacity: 0;
+}
+#matchLineV6{
+    background-image: url(../Assets/matchLine.png);
+    height: 150px;
+    width: 1px;
+    transform: rotate(180deg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 104px;
+    opacity: 0;
+}
+
+#danBrowns1{
+    background-image: url(../Assets/logodelJuego.png);
+    height: 30px;
+    width: 200px;
+    background-size: cover;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+}
+
+
+#contenedorFinal{
+    display: none;
+}
+#video {
+    position: absolute;
+    top: 250px;
+    width: 275px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+#laVerdad {
+    background-image: url(../Assets/verdad.png);
+    height: 95px;
+    width: 262px;
+    position: absolute;
+    top: 150px;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: scale(.8);
+}
+
+.btnSuscribete {
+    position: absolute;
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 135px;
+    left: 0;
+    right: 0;
+    top: 427px;
+    background-image: linear-gradient( to right, #7787b4, #6e7da8, #64739c, #5b6990, #525f84 );
+
+}
+#suscribete {
+    height: 16px;
+    background-size: cover;
+    margin: 10px;
+    background-image: url(../Assets/suscribete.png);
+}
+#danBrowns2{
+    background-image: url(../Assets/logodelJuego.png);
+    height: 30px;
+    width: 200px;
+    background-size: cover;
+    position: absolute;
+    bottom: 22%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}

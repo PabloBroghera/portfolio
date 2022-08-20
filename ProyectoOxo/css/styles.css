@@ -1,0 +1,448 @@
+body {
+  margin: 0;
+}
+
+.timer::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../Assets/reloj.png);
+    width: 13px;
+    height: 15px;
+    background-size: contain;
+    margin-right: 5px;
+}
+
+#container {
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+#playZone {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+  max-height: 500px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: none;
+}
+
+#inicio {
+  display: none;
+}
+
+/* #juego {
+  display: none;
+  width: 100%;
+  height: 100%;
+} */
+
+#background {
+  background-image: url(../Assets/fondoInicial.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+#encuentra {
+  background-image: url(../Assets/encuentra.png);
+  height: 55px;
+  width: 210px;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#loader-container {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  align-content: center;
+  justify-content: center;
+}
+
+#loader {
+  margin: auto;
+}
+
+
+#simbolo1 {
+  background-image: url(../Assets/aceite.png);
+  height: 75px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 140px;
+  left: 15px;
+}
+
+#simbolo2 {
+  background-image: url(../Assets/atun.png);
+  height: 20px;
+  width: 48px;
+  background-size: cover;
+  position: absolute;
+  top: 170px;
+  left: 80px;
+}
+
+#simbolo3 {
+  background-image: url(../Assets/aceite.png);
+  height: 75px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 140px;
+  left: 158px;
+}
+
+#simbolo4 {
+  background-image: url(../Assets/atun.png);
+  height: 20px;
+  width: 48px;
+  background-size: cover;
+  position: absolute;
+  top: 170px;
+  right: 5px;
+}
+
+#simbolo5 {
+  background-image: url(../Assets/preciosBajos.png);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  position: absolute;
+  top: 245px;
+  left: 3px;
+}
+
+#simbolo6 {
+  background-image: url(../Assets/atun.png);
+  height: 20px;
+  width: 48px;
+  background-size: cover;
+  position: absolute;
+  top: 260px;
+  left: 75px;
+
+}
+
+#simbolo7 {
+  background-image: url(../Assets/atun.png);
+  height: 20px;
+  width: 48px;
+  background-size: cover;
+  position: absolute;
+  top: 260px;
+  left: 146px;
+
+}
+
+#simbolo8 {
+  background-image: url(../Assets/aceite.png);
+  height: 75px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 232px;
+  right: 15px;
+}
+
+#simbolo9 {
+  background-image: url(../Assets/leche.png);
+  height: 53px;
+  width: 34px;
+  background-size: cover;
+  position: absolute;
+  top: 340px;
+  left: 11px;
+}
+
+
+#simbolo10 {
+  background-image: url(../Assets/preciosBajos.png);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  position: absolute;
+  top: 340px;
+  left: 75px;
+}
+
+#simbolo11 {
+  background-image: url(../Assets/leche.png);
+  height: 53px;
+  width: 34px;
+  background-size: cover;
+  position: absolute;
+  top: 340px;
+  left: 155px;
+}
+
+#simbolo12 {
+  background-image: url(../Assets/aceite.png);
+  height: 75px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 320px;
+  right: 15px;
+}
+
+#simbolo13 {
+  background-image: url(../Assets/atun.png);
+  height: 20px;
+  width: 48px;
+  background-size: cover;
+  position: absolute;
+  top: 440px;
+  left: 5px;
+}
+
+
+#simbolo14 {
+  background-image: url(../Assets/aceite.png);
+  height: 75px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 415px;
+  left: 85px;
+
+}
+
+
+#simbolo15 {
+  background-image: url(../Assets/atun.png);
+  height: 20px;
+  width: 48px;
+  background-size: cover;
+  position: absolute;
+  top: 440px;
+  left: 146px;
+}
+
+#simbolo16 {
+  background-image: url(../Assets/aceite.png);
+  height: 75px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 415px;
+  right: 15px;
+}
+
+.simbolo::after {
+  content: " ";
+  background: #040404;
+  display: block;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: -12px;
+  filter: blur(7px);
+  opacity: 0.3;
+}
+
+#matchLineV1 {
+  background-image: url(../Assets/matchLine.png);
+  height: 275px;
+  width: 9px;
+  background-size: cover;
+  position: absolute;
+  top: 224px;
+  right: 22px;
+  opacity: 0;
+  display: none;
+
+}
+
+#matchLineV2 {
+  background-image: url(../Assets/matchLine.png);
+  height: 221px;
+  width: 8px;
+  background-size: cover;
+  position: absolute;
+  top: 160px;
+  left: 170px;
+  opacity: 0;
+  transform: rotate(-90deg);
+  display: none;
+}
+
+#matchLineV4 {
+  background-image: url(../Assets/matchLine.png);
+  height: 221px;
+  width: 8px;
+  background-size: cover;
+  position: absolute;
+  top: 70px;
+  left: 110px;
+  opacity: 0;
+  transform: rotate(-90deg);
+  display: none;
+}
+
+#progreso {
+  background-image: url(../Assets/tuProgreso.png);
+  height: 18px;
+  width: 96px;
+  background-size: cover;
+  position: absolute;
+  top: 510px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#barraProgreso {
+  background-image: url(../Assets/barraInicial.png);
+  height: 11px;
+  width: 233px;
+  background-size: cover;
+  position: absolute;
+  top: 536px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#barraProgreso1 {
+  background-image: url(../Assets/barraLlena1.png);
+  height: 11px;
+  width: 50px;
+  background-size: cover;
+  position: absolute;
+  top: 536px;
+  left: 25px;
+  opacity: 0;
+}
+
+#barraProgreso2 {
+  background-image: url(../Assets/barraLlena2.png);
+  height: 11px;
+  width: 139px;
+  background-size: cover;
+  position: absolute;
+  top: 536px;
+  left: 37px;
+  opacity: 0;
+}
+
+#barraProgreso3 {
+  background-image: url(../Assets/barraLlena3.png);
+  height: 11px;
+  width: 187px;
+  background-size: cover;
+  position: absolute;
+  top: 536px;
+  left: 69px;
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+#logoInicial {
+  background-image: url(../Assets/logo.png);
+  height: 72px;
+  width: 131px;
+  background-size: cover;
+  position: absolute;
+  top:50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#logo {
+  background-image: url(../Assets/logo.png);
+  height: 145px;
+  width: 261px;
+  background-size: cover;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#loLograste {
+  background-image: url(../Assets/loLograste.png);
+  height: 31px;
+  width: 171px;
+  background-size: cover;
+  position: absolute;
+  top: 375px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#estrella {
+  background-image: url(../Assets/estrella.png);
+  height: 90px;
+  width: 90px;
+  background-size: cover;
+  position: absolute;
+  top: 450px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#progresoFinal {
+  background-image: url(../Assets/tuProgresoBlanco.png);
+  height: 27px;
+  width: 149px;
+  background-size: cover;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#barraBlanca {
+  background-image: url(../Assets/barraLlenaBlanca.png);
+  height: 10px;
+  width: 221px;
+  background-size: cover;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#contenedorFinal {
+  display: none;
+
+}
+
+#imagenFinal {
+  display: none;
+  background-image: url(../Assets/imagen_final.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
