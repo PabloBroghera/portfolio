@@ -1,0 +1,581 @@
+body{
+  margin:0;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#inicio {
+  display: none;
+}
+#juego {
+  display: none;
+}
+#background {
+  background-image: url(../Assets/background.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.universal {
+  background-image: url(../Assets/logo_universarl.png);
+  height: 55px;
+  width: 100px;
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  background-size: cover;
+  margin: 0 auto;
+}
+.logoInicio {
+  top: 150px;
+}
+.logoJuego {
+  top: 70px;
+}
+.uneLosSignos {
+  background-image: url(../Assets/textoSignos.png);
+  height: 45px;
+  width: 240px;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#jugar {
+  background-image: url(../Assets/jugar.png);
+  height: 15px;
+  width: 75px;
+  background-size: cover;
+  margin: 0 auto;
+}
+#btnJugar {
+  margin: 0 auto;
+  top: 350px;
+  left: 0;
+  right: 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  height: 55px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+#danBrowns {
+  background-image: url(../Assets/logodelJuego.png);
+  height: 30px;
+  width: 200px;
+  background-size: cover;
+  position: absolute;
+  top: 450px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#uneLosSignos {
+  background-image: url(../Assets/textoSignos.png);
+  height: 30px;
+  width: 155px;
+  background-size: cover;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#completar {
+  background-color: rgba(111, 119, 93, 0.3);
+  height: 20px;
+  width: 140px;
+  background-size: cover;
+  position: absolute;
+  top: 185px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#trianguloC {
+  background-image: url(../Assets/triangulo2.png);
+  height: 11px;
+  width: 17px;
+  background-size: cover;
+  position: absolute;
+  top: 210px;
+  left: 0;
+  right: 110px;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+#cuadradoC {
+  background-image: url(../Assets/cuadrado.png);
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  position: absolute;
+  top: 210px;
+  left: 0;
+  right: 63px;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+#dosLadosPuntoC {
+  background-image: url(../Assets/dosladospunto.png);
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  position: absolute;
+  top: 210px;
+  left: 0px;
+  right: 15px;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+#tresLadosC {
+  background-image: url(../Assets/treslados.png);
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  position: absolute;
+  top: 210px;
+  left: 0;
+  right: -30px;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+#dosLadosC {
+  background-image: url(../Assets/doslados.png);
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  position: absolute;
+  top: 210px;
+  left: 0px;
+  right: -75px;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+#tresLadosC2 {
+  background-image: url(../Assets/treslados.png);
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  position: absolute;
+  top: 210px;
+  left: 0;
+  right: -120px;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+#playZone {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 250px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+#loader-container {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  align-content: center;
+  justify-content: center;
+}
+#loader {
+  margin: auto;
+}
+#D2 {
+  background-image: url(../Assets/d.png);
+  height: 18px;
+  width: 15px;
+  position: absolute;
+  left: 120px;
+  top: 3px;
+  opacity: 0;
+  background-size: cover;
+}
+#D {
+  background-image: url(../Assets/d.png);
+  height: 18px;
+  width: 15px;
+  position: absolute;
+  left: 77px;
+  top: 3px;
+  opacity: 0;
+  background-size: cover;
+}
+#V {
+  background-image: url(../Assets/v.png);
+  height: 18px;
+  width: 15px;
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  opacity: 0;
+  background-size: cover;
+}
+#R {
+  background-image: url(../Assets/r.png);
+  height: 18px;
+  width: 15px;
+  position: absolute;
+  left: 55px;
+  top: 3px;
+  opacity: 0;
+  background-size: cover;
+}
+#E {
+  background-image: url(../Assets/e.png);
+  height: 16px;
+  width: 13px;
+  position: absolute;
+  left: 33px;
+  top: 3px;
+  opacity: 0;
+  background-size: cover;
+}
+#A {
+  background-image: url(../Assets/a.png);
+  height: 18px;
+  width: 15px;
+  position: absolute;
+  left: 100px;
+  top: 3px;
+  opacity: 0;
+  background-size: cover;
+}
+#matchLineV {
+  background-image: url(../Assets/matchLine.png);
+  height: 150px;
+  width: 1px;
+  transform: rotate(90deg);
+  background-size: cover;
+  position: absolute;
+  top: -50px;
+  left: 80px;
+  opacity: 0;
+}
+#matchLineV2 {
+  background-image: url(../Assets/matchLine.png);
+  height: 150px;
+  width: 1px;
+  transform: rotate(180deg);
+  background-size: cover;
+  position: absolute;
+  top: 57px;
+  left: 174px;
+  opacity: 0;
+}
+#matchLineV3 {
+  background-image: url(../Assets/matchLine.png);
+  height: 150px;
+  width: 1px;
+  transform: rotate(90deg);
+  background-size: cover;
+  position: absolute;
+  top: 52px;
+  left: 127px;
+  opacity: 0;
+}
+#matchLineV4 {
+  background-image: url(../Assets/matchLine.png);
+  height: 150px;
+  width: 1px;
+  transform: rotate(180deg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 32px;
+  opacity: 0;
+}
+#matchLineV5 {
+  background-image: url(../Assets/matchLine.png);
+  height: 150px;
+  width: 1px;
+  transform: rotate(180deg);
+  background-size: cover;
+  position: absolute;
+  top: 56px;
+  left: 127px;
+  opacity: 0;
+}
+#simbolo1 {
+  background-image: url(../Assets/triangulo2.png);
+  height: 25px;
+  width: 40px;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 135px;
+  margin: 0 auto;
+}
+#simbolo2 {
+  background-image: url(../Assets/triangulo2.png);
+  height: 25px;
+  width: 40px;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 40px;
+  margin: 0 auto;
+}
+#simbolo3 {
+  background-image: url(../Assets/triangulo2.png);
+  height: 25px;
+  width: 40px;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: -55px;
+  margin: 0 auto;
+}
+#simbolo4 {
+  background-image: url(../Assets/dosladospunto.png);
+  height: 25px;
+  width: 30px;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: -145px;
+  margin: 0 auto;
+}
+
+#simbolo5 {
+  background-image: url(../Assets/dosladospunto.png);
+  height: 25px;
+  width: 30px;
+  background-size: cover;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  right: 135px;
+  margin: 0 auto;
+}
+
+#simbolo6 {
+  background-image: url(../Assets/triangulo2.png);
+  height: 25px;
+  width: 40px;
+  background-size: cover;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  right: 40px;
+  margin: 0 auto;
+}
+
+#simbolo7 {
+  background-image: url(../Assets/cuadrado.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  right: -55px;
+  margin: 0 auto;
+}
+
+#simbolo8 {
+  background-image: url(../Assets/doslados.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  right: -145px;
+  margin: 0 auto;
+}
+
+#simbolo9 {
+  background-image: url(../Assets/dosladospunto.png);
+  height: 25px;
+  width: 30px;
+  background-size: cover;
+  position: absolute;
+  top: 115px;
+  left: 0px;
+  right: 135px;
+  margin: 0 auto;
+}
+
+#simbolo10 {
+  background-image: url(../Assets/treslados.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 115px;
+  left: 0px;
+  right: 40px;
+  margin: 0 auto;
+}
+
+#simbolo11 {
+  background-image: url(../Assets/treslados.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 115px;
+  left: 0px;
+  right: -55px;
+  margin: 0 auto;
+}
+
+#simbolo12 {
+  background-image: url(../Assets/doslados.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 115px;
+  left: 0px;
+  right: -145px;
+  margin: 0 auto;
+}
+
+#simbolo13 {
+  background-image: url(../Assets/doslados.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  right: 135px;
+  margin: 0 auto;
+}
+
+#simbolo14 {
+  background-image: url(../Assets/triangulo2.png);
+  height: 25px;
+  width: 40px;
+  background-size: cover;
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  right: 40px;
+  margin: 0 auto;
+}
+
+#simbolo15 {
+  background-image: url(../Assets/cuadrado.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  right: -55px;
+  margin: 0 auto;
+}
+
+#simbolo16 {
+  background-image: url(../Assets/doslados.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  right: -145px;
+  margin: 0 auto;
+}
+
+.danBrowns1 {
+  background-image: url(../Assets/logodelJuego.png);
+  height: 30px;
+  width: 200px;
+  background-size: cover;
+  position: absolute;
+  top: 475px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.danBrowns2 {
+  background-image: url(../Assets/logodelJuego.png);
+  height: 30px;
+  width: 200px;
+  background-size: cover;
+  position: absolute;
+  top: 610px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+#contenedorFinal {
+  display: none;
+}
+#video{
+  position: absolute;
+  top: 315px;
+  width: 380px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  
+
+}
+
+#laVerdad{
+  background-image: url(../Assets/verdad.png);
+  height: 109px;
+  width: 300px;
+  position: absolute;
+  top: 184px;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+}
+
+.btnSuscribete{
+  position: absolute;
+  border-radius: 4px; 
+  margin: 0 auto;
+  width: 135px;
+  left: 0;
+  right: 0;
+  
+  top: 545px;
+  background-image: linear-gradient(to right, #7787b4, #6e7da8, #64739c, #5b6990, #525f84);
+}
+#suscribete{
+  height: 16px;
+  background-size: cover;
+  margin: 10px;
+  background-image: url(../Assets/suscribete.png);
+  
+}
+
